@@ -1,0 +1,285 @@
+:root {
+    --darkblue: #1c1b31;
+    --bluegreen: #7de3ce;
+    --orange: #FD764A;
+  }
+
+*{
+    font-family: 'Urbanist', sans-serif;
+}
+
+body{
+    text-align: center;
+    margin:  0;
+}
+html{
+    background-color: var(--darkblue);
+}
+
+a{
+    color: var(--bluegreen);
+}
+
+.thin{
+    font-weight: 200;
+}
+
+.strong{
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-s{
+    max-width: 700px;
+    margin: auto;
+}
+
+.ver-cen{
+    position: relative;
+}
+
+
+
+nav {
+    overflow: hidden;
+    /* position: fixed;  */
+    top: 0; 
+    left: calc(-50vw + 50%);
+    right: calc(-50vw + 50%);
+    height: 50px;
+    background-image: linear-gradient(to bottom,  var(--darkblue), rgba(255,0,0,0));
+  }
+
+
+  
+  nav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+
+    
+    
+  nav a:after{   
+    bottom: 2px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: var(--orange);
+    transition: width 0.2s ease 0s, left 0.2s ease 0s;
+    width: 0;
+    bottom: 8px;
+      
+}
+
+nav a:hover:after{
+width: 100%;
+left: 0;
+}
+
+
+
+#hero {
+    height: 650px;
+    position: relative;
+    background-image: url("images/homeimage.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#main_text{
+    padding-top: 27%;
+    color: var(--orange);
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    
+}
+
+#about{
+    padding-top: 40px;
+    border-top: 1px dashed var(--bluegreen);
+    background: var(--bluegreen);
+    height: 22vh;
+    color: #4f4f4f;
+
+}
+
+#about>p{
+    line-height: 2.5rem;
+}
+
+
+
+.button{
+    margin: 10px auto;
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background-color: var(--orange);
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgb(90, 90, 90);
+    border-radius: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    }
+    
+    .button span{
+    position: relative;
+    z-index: 2;
+    }
+    
+    .button:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff4608;
+    border-radius: 8px;
+    transition: all .2s;
+    }
+    
+    .button:hover:after{
+    width: 100%;
+    }
+      
+  
+#text-animation::before {
+    content: 'Designer';
+    animation-name: animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+
+    25% {
+        content: 'Marketer';
+    }
+
+    50% {
+        content: 'Dreamer';
+    }
+
+    75% {
+        content: "Creator";
+    }
+}
+
+footer{
+    height: 50px;
+    
+}
+
+footer>p {
+    float: left;
+    color: rgb(192, 192, 192);
+    font-size: 0.67em;
+    margin: 0;
+    margin-top: 25px;
+    transform: translateY(-50%);
+}
+
+footer>a{
+    float: right;
+    color: rgb(192, 192, 192);
+    margin-top: 25px;
+    margin-left: 18px;
+    transform: translateY(-50%);
+}
+
+#work{
+    color: white;
+}
+
+
+#work_main{
+    height: 1000px;
+    background: var(--bluegreen)
+    color: red;
+}
+
+#design_work {
+    margin-top: 30px;
+}
+
+#work>section>h2{
+    font-weight: 400;
+    padding-top: 40px;
+}
+
+.image_s{
+    margin: auto auto;
+    max-width: 300px;
+}
+
+.image_des{
+ vertical-align: top;
+ display: inline;
+
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.image_work{
+    height: 200px;
+    cursor: pointer;
+}
+
+.gallery>div{
+    padding: 20px;
+}
+
+  
+.image_grp:hover{
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(1.5);
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari and Chrome */
+
+}
+
+.image_des2{
+    margin: auto auto;
+    margin-top: -10px;
+    max-width: 900px;
+   
+   }
+
+   .sub-title{
+       font-weight: 400;
+   }
+
+#prototype{
+    padding-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    #about {
+        
+    }
+}
