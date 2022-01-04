@@ -48,7 +48,6 @@ a{
 
 nav {
     overflow: hidden;
-    /* position: fixed;  */
     top: 0; 
     left: calc(-50vw + 50%);
     right: calc(-50vw + 50%);
@@ -288,6 +287,9 @@ footer>a{
     #main_text{
         padding-top: 80%;
     }
+    nav a{
+        float: none;
+    } 
 
 
 }
