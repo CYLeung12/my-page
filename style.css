@@ -51,7 +51,7 @@ nav {
     left: calc(-50vw + 50%);
     right: calc(-50vw + 50%);
     height: 50px;
-    background-image: linear-gradient(to bottom,  var(--darkblue), rgba(255,0,0,0));
+    background-image: linear-gradient(to bottom,  var(--darkblue), rgba(28,27,49,0));
   }
 
 
