@@ -24,6 +24,7 @@ a{
 
 .thin{
     font-weight: 200;
+    margin: auto 10px;
 }
 
 .strong{
@@ -33,19 +34,20 @@ a{
 .container{
     max-width: 1200px;
     margin: auto auto;
-    padding: auto 15px;
 }
 
 .container-s{
     max-width: 700px;
     margin: auto auto;
-    padding: auto 15px;
 }
 
 .ver-cen{
     position: relative;
 }
 
+#about p{
+    margin: 0 15px;
+}
 
 
 nav {
@@ -109,12 +111,15 @@ left: 0;
     
 }
 
+
+
 #about{
     padding-top: 40px;
+    padding-bottom: 30px;
     border-top: 1px dashed var(--bluegreen);
     background: var(--bluegreen);
-    height: 22vh;
     color: #4f4f4f;
+    margin: auto auto;
 
 }
 
@@ -193,6 +198,7 @@ footer>p {
     color: rgb(192, 192, 192);
     font-size: 0.67em;
     margin: 0;
+    margin-left: 15px;
     margin-top: 25px;
     transform: translateY(-50%);
 }
@@ -201,7 +207,7 @@ footer>a{
     float: right;
     color: rgb(192, 192, 192);
     margin-top: 25px;
-    margin-left: 18px;
+    margin-right: 15px;
     transform: translateY(-50%);
 }
 
@@ -283,9 +289,7 @@ footer>a{
 }
 
 @media only screen and (max-width: 768px) {
-    #about {
-        height: 50vh;
-    }
+
     #main_text{
         padding-top: 80%;
     }
