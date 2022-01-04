@@ -32,12 +32,14 @@ a{
 
 .container{
     max-width: 1200px;
-    margin: auto 15px;
+    margin: auto auto;
+    padding: auto 15px;
 }
 
 .container-s{
     max-width: 700px;
-    margin: auto 15px;
+    margin: auto auto;
+    padding: auto 15px;
 }
 
 .ver-cen{
